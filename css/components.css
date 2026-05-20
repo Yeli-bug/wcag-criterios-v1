@@ -190,13 +190,13 @@
   text-transform: uppercase;
   white-space: nowrap;
 }
-.badge-a   { background: rgba(255,110,110,.13); color: #ff9090; border: 1px solid rgba(255,110,110,.3); }
-.badge-aa  { background: rgba(110,184,255,.13); color: var(--accent2); border: 1px solid rgba(110,184,255,.3); }
-.badge-aaa { background: rgba(127,255,110,.13); color: var(--accent); border: 1px solid rgba(127,255,110,.3); }
+.badge-a   { background: rgba(192, 31, 151, 0.13); color: #ed6060; border: 2px solid rgba(255, 110, 195, 0.3); }
+.badge-aa  { background: rgba(122, 183, 241, 0.13); color: var(--accent2); border: 2px solid rgba(110,184,255,.3); }
+.badge-aaa { background: rgba(169, 216, 190, 0.13); color: var(--accent); border: 2px solid rgba(127,255,110,.3); }
 
-.badge-perceptible  { background: rgba(127,255,110,.08); color: var(--accent);  border: 1px solid rgba(127,255,110,.2); }
-.badge-operable     { background: rgba(110,184,255,.08); color: var(--accent2); border: 1px solid rgba(110,184,255,.2); }
-.badge-comprensible { background: rgba(255,110,156,.08); color: var(--accent3); border: 1px solid rgba(255,110,156,.2); }
+.badge-perceptible  { background: rgba(55, 135, 135, 0.146); color: var(--accent);  border: 2px solid rgba(127,255,110,.2); }
+.badge-operable     { background: rgba(110,184,255,.08); color: var(--accent2); border: 2px solid rgba(110,184,255,.2); }
+.badge-comprensible { background: rgba(235, 88, 211, 0.08); color: var(--accent3); border: 2px solid rgba(255,110,156,.2); }
 .badge-robusto      { background: rgba(255,212,110,.08); color: var(--accent4); border: 1px solid rgba(255,212,110,.2); }
 
 /* ── Resource links grid ── */
