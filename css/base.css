@@ -4,22 +4,22 @@
 
 :root {
   /* Colores */
-  --bg:          #06080b;
-  --surface:     #0f0f18;
-  --surface2:    #181824;
-  --surface3:    #20202f;
-  --border:      #28283c;
-  --border-soft: #1e1e2e;
+  --bg:          #0a101a;
+  --surface:     #0d0d1b;
+  --surface2:    #151527;
+  --surface3:    #1b1b2c;
+  --border:      #125e78;
+  --border-soft: #16a09e;
 
-  --accent:      #7fff6e;   /* verde — Perceptible */
-  --accent2:     #6eb8ff;   /* azul  — Operable    */
-  --accent3:     #ff6e9c;   /* rosa  — Comprensible */
-  --accent4:     #ffd46e;   /* oro   — Robusto      */
-  --accent-dim:  rgba(127,255,110,.12);
+  --accent:      #8FCB81;   /* verde — Perceptible */
+  --accent2:     #7BAEDC;   /* azul  — Operable    */
+  --accent3:     #D88AA2;   /* rosa  — Comprensible */
+  --accent4:     #E2BE6D;  /* oro   — Robusto      */
+  --accent-dim:   rgba(143, 203, 129, 0.14);;
 
   --text:        #ddddf0;
-  --text-muted:  #7878a0;
-  --text-dim:    #3e3e58;
+  --text-muted:  #bfbfd1;
+  --text-dim:    #9797a4;
 
   /* Tipografía */
   /* --font-mono:   'Space Mono', monospace;
