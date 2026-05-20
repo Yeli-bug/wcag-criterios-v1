@@ -49,12 +49,20 @@ function buildRow(c) {
 
       <td class="col-mala">
         <p class="code-label code-label-bad">❌ ${c.malaPractica.label}</p>
-        <div class="code-snippet code-bad">${escapeHtml(c.malaPractica.code)}</div>
+
+        <details class="snippet-details">
+          <summary>Ver código</summary>
+          <div class="code-snippet code-bad">${escapeHtml(c.malaPractica.code)}</div>
+        </details>
       </td>
 
       <td class="col-buena">
         <p class="code-label code-label-good">✅ ${c.buenaPractica.label}</p>
-        <div class="code-snippet code-good">${escapeHtml(c.buenaPractica.code)}</div>
+        
+        <details class="snippet-details">
+          <summary>Ver código</summary>
+          <div class="code-snippet code-good">${escapeHtml(c.buenaPractica.code)}</div>
+        </details>
       </td>
 
       <td class="col-recurso">

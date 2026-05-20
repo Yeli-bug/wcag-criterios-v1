@@ -1959,57 +1959,6 @@ const WCAG_CRITERIA = [
     recurso: "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html"
   },
   {
-    id: "2.4.14",
-    nombre: "Foco no oculto (mejorado)",
-    quePide: "Cuando un componente de interfaz de usuario recibe el foco del teclado, ninguna parte del componente está oculta por contenido creado por el autor.",
-    nivel: "AAA",
-    principio: "Operable",
-    version: "2.2",
-    malaPractica: {
-      label: "Elemento enfocado parcialmente oculto por una barra de herramientas flotante",
-      code: `<style>
-  .toolbar-flotante {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    height: 60px;
-    background: #333;
-    z-index: 999;
-  }
-  /* El último enlace de la página puede quedar a medias bajo la toolbar */
-</style>
-<div class="toolbar-flotante">Herramientas</div>
-<footer>
-  <a href="/legal">Aviso legal</a>
-</footer>`
-    },
-    buenaPractica: {
-      label: "Toolbar flotante con scroll-padding-bottom que mantiene el foco completamente visible",
-      code: `<style>
-  .toolbar-flotante {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    height: 60px;
-    background: #1a1a2e;
-    z-index: 999;
-  }
-  html {
-    scroll-padding-bottom: 76px; /* altura toolbar + margen generoso */
-  }
-  :focus-visible {
-    scroll-margin-bottom: 76px;
-    /* Garantiza que NINGUNA parte del componente quede oculta ✓ */
-  }
-</style>
-<div class="toolbar-flotante" role="toolbar" aria-label="Herramientas de edición">
-  <!-- controles -->
-</div>
-<footer>
-  <a href="/legal">Aviso legal</a>
-</footer>`
-    },
-    recurso: "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-enhanced.html"
-  },
-  {
     id: "2.5.1",
     nombre: "Gestos del puntero",
     quePide: "Toda la funcionalidad que usa gestos multipunto o basados en trayectoria puede operarse con un puntero único sin gesto basado en trayectoria, a menos que sea esencial.",
@@ -3360,42 +3309,6 @@ const WCAG_CRITERIA = [
 </section>`
     },
     recurso: "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html"
-  },
-  {
-    id: "4.1.1",
-    nombre: "Análisis sintáctico",
-    quePide: "El contenido implementado en lenguajes de marcado debe poder ser analizado sin errores de especificación que afecten la interpretación, como etiquetas mal cerradas, atributos duplicados o IDs no únicos.",
-    nivel: "A",
-    principio: "Robusto",
-    version: "2.0",
-    malaPractica: {
-      label: "HTML con errores de análisis: etiquetas mal cerradas e IDs duplicados",
-      code: `<div id="principal">
-  <h1>Bienvenido</h1>
-  <p>Este es un párrafo sin cerrar
-  <ul>
-    <li id="item">Elemento 1</li>
-    <li id="item">Elemento 2</li>
-  </ul>
-<div>
-  <span>Texto <strong>importante</span></strong>
-</div>`
-    },
-    buenaPractica: {
-      label: "HTML bien formado: etiquetas correctamente cerradas e IDs únicos",
-      code: `<div id="principal">
-  <h1>Bienvenido</h1>
-  <p>Este es un párrafo correctamente cerrado.</p>
-  <ul>
-    <li id="item-1">Elemento 1</li>
-    <li id="item-2">Elemento 2</li>
-  </ul>
-  <div>
-    <span>Texto <strong>importante</strong></span>
-  </div>
-</div>`
-    },
-    recurso: "https://www.w3.org/WAI/WCAG22/Understanding/parsing"
   },
   {
     id: "4.1.2",

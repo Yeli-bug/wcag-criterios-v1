@@ -12,7 +12,7 @@
   border: none;
   border-radius: var(--radius);
   padding: .65rem 1.5rem;
-  font-family: var(--font-mono);
+  font-family: var( --font-main);
   font-size: .82rem;
   font-weight: 700;
   letter-spacing: .03em;
@@ -111,7 +111,7 @@
   border-radius: var(--radius);
   padding: .65rem .95rem;
   color: var(--text);
-  font-family: var(--font-mono);
+  font-family: var( --font-main);
   font-size: .85rem;
   transition: border-color var(--transition), box-shadow var(--transition);
   width: 100%;
@@ -249,7 +249,7 @@
   border-radius: var(--radius);
   padding: .6rem .85rem;
   font-size: .72rem;
-  font-family: var(--font-mono);
+  font-family: var( --font-main);
   overflow-x: auto;
   white-space: pre;
   line-height: 1.6;

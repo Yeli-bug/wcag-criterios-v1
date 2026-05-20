@@ -33,7 +33,7 @@
   border-radius: var(--radius);
   padding: .45rem .75rem;
   color: var(--text);
-  font-family: var(--font-mono);
+  font-family: var( --font-main);
   font-size: .78rem;
   cursor: pointer;
   appearance: none;

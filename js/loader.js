@@ -1,5 +1,4 @@
 /**
- * LOADER.JS
  * Carga todas las secciones HTML con fetch e inicializa los módulos JS.
  * Orden: carga las secciones → espera → inicializa filtros y formulario.
  */

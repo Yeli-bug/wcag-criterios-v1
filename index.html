@@ -24,7 +24,7 @@
   <!-- SKIP LINK (accesibilidad: salta la nav al contenido) -->
   <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-  <!-- SLOTS — cada div se rellena via fetch() en loader.js -->
+  <!-- SLOTS -->
   <div id="slot-header"></div>
 
   <main id="main-content">
@@ -35,13 +35,6 @@
 
   <div id="slot-footer"></div>
 
-  <!--
-    ORDEN DE SCRIPTS — importante:
-    1. wcag-criteria.js  → define la constante global WCAG_CRITERIA
-    2. filters.js        → lee WCAG_CRITERIA, renderiza filas, maneja filtros
-    3. form.js           → maneja el formulario de contacto
-    4. loader.js         → fetch de secciones HTML, llama a initFilters() e initForm()
-  -->
   <script src="data/wcag-criteria.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/form.js"></script>
