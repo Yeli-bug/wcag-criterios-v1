@@ -1,0 +1,98 @@
+<section id="criterios" class="page-section" aria-labelledby="criterios-title">
+
+  <div class="section-header">
+    <span class="section-label">Conformidad WCAG</span>
+    <h2 id="criterios-title">Tabla de criterios WCAG</h2>
+    <p>
+      Actualmente se muestran <strong style="color:var(--text)">6 criterios</strong> de los 86 totales.
+      Agrega los demás editando <code>data/wcag-criteria.js</code>.
+      Filtra por nivel, principio o versión.
+    </p>
+  </div>
+
+  <!-- Filtros -->
+  <div class="filters-bar" role="group" aria-label="Filtros de la tabla de criterios">
+
+    <div class="filter-group">
+      <label for="filter-level">Nivel</label>
+      <select id="filter-level" aria-label="Filtrar por nivel de conformidad">
+        <option value="">Todos los niveles</option>
+        <option value="A">A</option>
+        <option value="AA">AA</option>
+        <option value="AAA">AAA</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-principle">Principio</label>
+      <select id="filter-principle" aria-label="Filtrar por principio WCAG">
+        <option value="">Todos los principios</option>
+        <option value="Perceptible">Perceptible</option>
+        <option value="Operable">Operable</option>
+        <option value="Comprensible">Comprensible</option>
+        <option value="Robusto">Robusto</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="filter-version">Versión</label>
+      <select id="filter-version" aria-label="Filtrar por versión WCAG">
+        <option value="">Todas las versiones</option>
+        <option value="2.0">2.0</option>
+        <option value="2.1">2.1</option>
+        <option value="2.2">2.2</option>
+      </select>
+    </div>
+
+    <div class="filters-actions">
+      <button
+        class="btn btn-ghost"
+        id="reset-filters"
+        aria-label="Limpiar todos los filtros activos"
+      >↺ Limpiar filtros</button>
+    </div>
+  </div>
+
+  <!-- Meta: conteo + chips activos -->
+  <div class="results-meta" aria-live="polite" aria-atomic="true">
+    <span id="results-count"></span>
+    <div id="active-filters" class="active-filters" aria-label="Filtros activos"></div>
+  </div>
+
+  <!-- Tabla -->
+  <div class="table-wrap">
+    <table
+      class="criteria-table"
+      aria-label="Criterios de conformidad WCAG"
+      aria-describedby="criterios-title"
+    >
+      <thead>
+        <tr>
+          <th scope="col" class="col-id">Criterio</th>
+          <th scope="col" class="col-que-pide">Qué pide</th>
+          <th scope="col" class="col-nivel">Nivel</th>
+          <th scope="col" class="col-principio">Principio</th>
+          <th scope="col" class="col-version">Versión</th>
+          <th scope="col" class="col-mala">Mala práctica</th>
+          <th scope="col" class="col-buena">Buena práctica</th>
+          <th scope="col" class="col-recurso">Recurso</th>
+        </tr>
+      </thead>
+      <tbody id="criteria-tbody">
+        <!-- Las filas se generan desde data/wcag-criteria.js via filters.js -->
+      </tbody>
+    </table>
+
+    <!-- Sin resultados -->
+    <div
+      class="no-results"
+      id="no-results"
+      role="status"
+      aria-live="polite"
+    >
+      <span class="no-results-icon" aria-hidden="true">🔍</span>
+      No se encontraron criterios con los filtros seleccionados.
+    </div>
+  </div>
+
+</section>
