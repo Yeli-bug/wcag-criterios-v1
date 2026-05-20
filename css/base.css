@@ -4,17 +4,17 @@
 
 :root {
   /* Colores */
-  --bg:          #0a101a;
+  --bg:          #000000;
   --surface:     #0d0d1b;
-  --surface2:    #151527;
+  --surface2:    #15152a;
   --surface3:    #1b1b2c;
   --border:      #125e78;
   --border-soft: #16a09e;
 
-  --accent:      #8FCB81;   /* verde — Perceptible */
-  --accent2:     #7BAEDC;   /* azul  — Operable    */
-  --accent3:     #D88AA2;   /* rosa  — Comprensible */
-  --accent4:     #E2BE6D;  /* oro   — Robusto      */
+  --accent:      #8FCB81;  
+  --accent2:     #7BAEDC;  
+  --accent3:     #D88AA2;   
+  --accent4:     #E2BE6D;  
   --accent-dim:   rgba(143, 203, 129, 0.14);;
 
   --text:        #ddddf0;
@@ -76,6 +76,13 @@ h3 {
   font-weight: 700;
   color: var(--accent2);
   letter-spacing: .02em;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: .5rem 0;
 }
 
 p {

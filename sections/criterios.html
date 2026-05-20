@@ -1,10 +1,14 @@
 <section id="criterios" class="page-section" aria-labelledby="criterios-title">
 
   <div class="section-header">
-    <span class="section-label">Conformidad WCAG</span>
-    <h1 id="criterios-title">Tabla de criterios WCAG</h1>
+    <span class="section-label">Pautas</span>
+    <h1 id="criterios-title">Descripción general de las WCAG</h1>
+
+    <h4>Las Pautas de Accesibilidad para el Contenido Web (WCAG, por sus siglas en inglés) son un estándar reconocido
+      internacionalmente creado por el Consorcio World Wide Web (W3C). <br />
+    </h4>
     <p>
-      Actualmente se muestran <strong style="color:var(--text)"> los 86 criterios</strong>. <br/>
+      Actualmente se muestran <strong style="color:var(--text)"> los 86 criterios</strong>. <br />
       Abajo puedes filtrar por nivel, principio o versión.
     </p>
   </div>
@@ -44,11 +48,8 @@
     </div>
 
     <div class="filters-actions">
-      <button
-        class="btn btn-ghost"
-        id="reset-filters"
-        aria-label="Limpiar todos los filtros activos"
-      >↺ Limpiar filtros</button>
+      <button class="btn btn-ghost" id="reset-filters" aria-label="Limpiar todos los filtros activos">Limpiar
+        filtros</button>
     </div>
   </div>
 
@@ -60,11 +61,7 @@
 
   <!-- Tabla -->
   <div class="table-wrap">
-    <table
-      class="criteria-table"
-      aria-label="Criterios de conformidad WCAG"
-      aria-describedby="criterios-title"
-    >
+    <table class="criteria-table" aria-label="Criterios de conformidad WCAG" aria-describedby="criterios-title">
       <thead>
         <tr>
           <th scope="col" class="col-id">Criterio</th>
@@ -83,12 +80,7 @@
     </table>
 
     <!-- Sin resultados -->
-    <div
-      class="no-results"
-      id="no-results"
-      role="status"
-      aria-live="polite"
-    >
+    <div class="no-results" id="no-results" role="status" aria-live="polite">
       <span class="no-results-icon" aria-hidden="true">🔍</span>
       No se encontraron criterios con los filtros seleccionados.
     </div>
