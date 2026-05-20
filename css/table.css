@@ -122,7 +122,7 @@
 .criteria-table tbody td:first-child { padding-left: 1.25rem; }
 
 /* Col widths */
-.col-id       { width: 110px; white-space: nowrap; }
+.col-id       { width: 100px;}
 .col-que-pide { min-width: 180px; }
 .col-nivel    { width: 70px;  text-align: center; }
 .col-principio{ width: 130px; }
