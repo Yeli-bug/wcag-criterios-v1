@@ -15,8 +15,9 @@ const SECTIONS = [
  * Carga un archivo HTML parcial e inyecta su contenido en el slot indicado.
  */
 async function loadSection({ slot, file }) {
-  const el = document.getElementById(slot);
-  if (!el) return;
+  const el = document.getElementById(slot);   // Obtener un slot por su ID
+  console.log("el", el); //div#slot-header, div#slot-criterios, div#slot-formulario, div#slot-recursos, div#slot-footer
+  if (!el) return; // Si no se encuentra el slot, no hacer nada
 
   // Mostrar skeleton mientras carga
   el.innerHTML = '<div class="loading-slot" aria-hidden="true"></div>';
@@ -24,8 +25,8 @@ async function loadSection({ slot, file }) {
   try {
     const res = await fetch(file);
     if (!res.ok) throw new Error(`HTTP ${res.status} — ${file}`);
-    const html = await res.text();
-    el.innerHTML = html;
+    const html = await res.text();  //La respuesta llega primero como datos "crudos". .text() los convierte en un string de texto legible. También es asíncrono, por eso otro await.
+    el.innerHTML = html;  //Reemplaza el skeleton con el HTML real que llegó del archivo. 
   } catch (err) {
     el.innerHTML = `<p style="color:var(--accent3);padding:1rem;font-size:.8rem;">
       ⚠ No se pudo cargar <code>${file}</code>. Asegúrate de servir el proyecto con un servidor local.
@@ -45,4 +46,5 @@ async function init() {
   if (typeof initForm      === 'function') initForm();
 }
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init); //Cuando termines de leer el HTML base, ejecuta init
+//DOMContentLoaded Es un evento que el navegador dispara en el momento exacto en que terminó de leer y construir el HTML

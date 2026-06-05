@@ -1,13 +1,7 @@
 /**
  * ================================================================
  *  WCAG_CRITERIA.JS
- *  Archivo de datos — aquí agregas los 86 criterios WCAG
- *
- *  CÓMO AGREGAR UN CRITERIO:
- *  1. Copia uno de los objetos de abajo.
- *  2. Cambia los valores según el criterio.
- *  3. Guarda el archivo. El filtro y la tabla se actualizan solos.
- *
+ * 
  *  CAMPOS:
  *    id         — número del criterio, ej: "1.1.1"
  *    nombre     — nombre corto, ej: "Contenido no textual"
@@ -15,7 +9,7 @@
  *    nivel      — "A" | "AA" | "AAA"
  *    principio  — "Perceptible" | "Operable" | "Comprensible" | "Robusto"
  *    version    — "2.0" | "2.1" | "2.2"
- *    malaPractica — { label, code }   (code puede ser string multilinea)
+ *    malaPractica — { label, code }
  *    buenaPractica— { label, code }
  *    recurso    — URL a la página oficial del criterio en W3C
  * ================================================================
@@ -23,9 +17,7 @@
 
 const WCAG_CRITERIA = [
 
-  // ──────────────────────────────────────────────
   //  PRINCIPIO 1 — PERCEPTIBLE
-  // ──────────────────────────────────────────────
   {
     id: "1.1.1",
     nombre: "Contenido no textual",
@@ -3491,18 +3483,7 @@ const WCAG_CRITERIA = [
     },
     recurso: "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
   }
-
-
-  /* ──────────────────────────────────────────────
-     AGREGA AQUÍ MÁS CRITERIOS
-     Copia la estructura de arriba y pega debajo.
-     Recuerda poner una coma después del cierre }
-     del criterio anterior.
-     ────────────────────────────────────────────── */
-
 ];
 
-// Exporta para que filters.js y table-renderer.js lo usen
-// (No es necesario con script tags clásicos, pero lo dejamos
-//  documentado para si migras a módulos ES)
+// Exporta para que filters.js
 // export default WCAG_CRITERIA;

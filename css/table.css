@@ -1,6 +1,4 @@
-/* ============================================================
-   TABLE.CSS — Tabla de criterios WCAG, filtros, paginación
-   ============================================================ */
+   /* TABLE.CSS — Tabla de criterios WCAG, filtros, paginación */
 
 /* ── Filters bar ── */
 .filters-bar {
@@ -44,7 +42,7 @@
   min-width: 130px;
   transition: border-color var(--transition);
 }
-.filter-group select:focus {
+.filter-group select:focus {  /* Sirve para: */
   outline: none;
   border-color: var(--accent2);
   box-shadow: 0 0 0 2px rgba(110,184,255,.18);

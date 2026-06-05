@@ -1,3 +1,4 @@
+<!-- aria-labelledby -->
 <section id="criterios" class="page-section" aria-labelledby="criterios-title">
 
   <div class="section-header">
@@ -13,6 +14,8 @@
   </div>
 
   <!-- Filtros -->
+  <!-- Para que es es el role -->
+  <!--Para que es el for="filter-level -->
   <div class="filters-bar" role="group" aria-label="Filtros de la tabla de criterios">
 
     <div class="filter-group">
@@ -53,12 +56,15 @@
   </div>
 
   <!-- Meta: conteo + chips activos -->
+  <!-- para que sirve aria-live -->
+  <!-- Para que sirve aria-atomic -->
   <div class="results-meta" aria-live="polite" aria-atomic="true">
     <span id="results-count"></span>
     <div id="active-filters" class="active-filters" aria-label="Filtros activos"></div>
   </div>
 
   <!-- Tabla -->
+  <!--Para que sirve aria-describedby -->
   <div class="table-wrap">
     <table class="criteria-table" aria-label="Criterios de conformidad WCAG" aria-describedby="criterios-title">
       <thead>
@@ -79,6 +85,7 @@
     </table>
 
     <!-- Sin resultados -->
+     <!-- Para que sirve aria-hidden -->
     <div class="no-results" id="no-results" role="status" aria-live="polite">
       <span class="no-results-icon" aria-hidden="true">🔍</span>
       No se encontraron criterios con los filtros seleccionados.

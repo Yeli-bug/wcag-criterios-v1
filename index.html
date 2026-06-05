@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,31 +16,35 @@
 />
 
   <!-- CSS — orden importa -->
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/table.css" />
+  <link rel="stylesheet" href="css/base.css" />  <!-- Main css. BASE.CSS — Variables, reset, tipografía global-->
+  <link rel="stylesheet" href="css/layout.css" /> <!-- LAYOUT.CSS — Header, nav, main, footer, section wrappers -->
+  <link rel="stylesheet" href="css/components.css" /> <!--COMPONENTS.CSS — Botones, formulario, cards, badges, links -->
+  <link rel="stylesheet" href="css/table.css" />  <!--   TABLE.CSS — Tabla de criterios WCAG, filtros, paginación -->
 </head>
-<body>
 
-  <!-- SKIP LINK (accesibilidad: salta la nav al contenido) -->
+
+<body>
+  <!-- SKIP LINK (accesibilidad: salta la nav al contenido #main-content ) -->
   <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-  <!-- SLOTS -->
-  <div id="slot-header"></div>
+  <!-- SLOTS: cargados en loader.js -->
+  <div id="slot-header"></div> 
 
   <main id="main-content">
     <div id="slot-criterios"></div>
     <div id="slot-formulario"></div>
     <div id="slot-recursos"></div>
   </main>
-
+  
+  <!-- MOVER EL FORMULARIO EN EL FOOTER
+   :ADD A NEW DIV, TO KEEP FOOTER CONTENT AND FORM -->
   <div id="slot-footer"></div>
 
   <script src="data/wcag-criteria.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/form.js"></script>
   <script src="js/loader.js"></script>
-
 </body>
+
+
 </html>
