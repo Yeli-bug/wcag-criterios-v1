@@ -201,7 +201,7 @@
 /* ── Resource links grid ── */
 .links-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); /* Sirve para: adaptar el número de columnas al ancho disponible, con un mínimo de 210px por columna. */
   gap: 1rem;
 }
 
@@ -226,7 +226,7 @@
 }
 .resource-link:focus-visible {
   outline: 2px solid var(--accent2);
-  outline-offset: 3px;
+  outline-offset: 3px;  /* Sirve para: separar el borde del texto para mayor legibilidad */
 }
 .resource-link .r-icon {
   font-size: 1.25rem;

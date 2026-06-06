@@ -152,7 +152,7 @@ code {
 .skip-link:focus {
   top: 1rem;
   outline: 3px solid var(--accent2);   /* Para que sirve*/
-  outline-offset: 3px;
+  outline-offset: 3px;  /* Sirve para: separar el borde del texto para mayor legibilidad */
   text-decoration: none;
 }
 

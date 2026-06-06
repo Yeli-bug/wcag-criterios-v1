@@ -2,6 +2,9 @@
  * FORM.JS
  * Maneja el formulario de contacto accesible:
  * - Validación inline con aria-invalid y aria-describedby
+ * aria-invalid: Indica a los lectores de pantalla que el campo contiene un valor inválido.
+ * aria-describedby: Referencia al mensaje de error asociado al campo.
+ * 
  * - Mensaje de éxito con aria-live="assertive"
  * - Reset limpio
  */

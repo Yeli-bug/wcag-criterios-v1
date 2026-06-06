@@ -65,7 +65,7 @@
   padding: .6rem 1.25rem;
   background: var(--surface2);
   border: 1px solid var(--border);
-  border-bottom: none;
+  /* border-bottom: none; */
   font-size: .72rem;
   color: var(--text-dim);
 }
@@ -81,7 +81,7 @@
 /* ── Table ── */
 .criteria-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse; /* Sirve para: eliminar el espacio entre bordes de celdas, creando un aspecto más limpio. */
   font-size: .8rem;
 }
 
@@ -158,7 +158,10 @@
   background: rgba(110,184,255,.07);
   text-decoration: none;
 }
-.wcag-ext-link:focus-visible { outline: 2px solid var(--accent2); outline-offset: 2px; }
+.wcag-ext-link:focus-visible { 
+  outline: 2px solid var(--accent2); 
+  outline-offset: 2px; 
+}
 
 /* ── No results ── */
 .no-results {
