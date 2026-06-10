@@ -5,6 +5,7 @@
 
 const SECTIONS = [
   { slot: "slot-header",     file: "sections/header.html"    },
+  { slot: "slot-introducción", file: "sections/introduction.html" },
   { slot: "slot-criterios",  file: "sections/criterios.html" },
   { slot: "slot-formulario", file: "sections/formulario.html"},
   { slot: "slot-recursos",   file: "sections/recursos.html"  },

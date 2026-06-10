@@ -70,6 +70,27 @@
   gap: 4rem;
 }
 
+/* ── Introduction ── */
+.container-introduction {
+  display: flex;
+  gap: 1.5rem; 
+}
+
+.left, .right {
+  /* width: 50%; */
+  flex: 1; /* hace que ambos divs se repartan el espacio disponible por igual. */
+  justify-content: center;
+}
+
+.intro-image{
+  width: 80%;
+  height: auto;
+}
+
+.intro-list {
+  margin-left: 2.25rem;
+}
+
 /* ── Section ── */
 .page-section {
   display: flex;
