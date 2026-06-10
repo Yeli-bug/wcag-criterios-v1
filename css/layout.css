@@ -82,6 +82,13 @@
   justify-content: center;
 }
 
+.intro-text{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: .5rem 0;
+}
+
 .intro-image{
   width: 80%;
   height: auto;
@@ -98,7 +105,7 @@
   gap: 1.2rem;
 }
 
-.section-header {
+.section-header, .section-intro {
   margin-bottom: .5rem;
 }
 .section-header p {
