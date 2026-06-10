@@ -97,6 +97,11 @@
 .intro-list {
   margin-left: 2.25rem;
 }
+@media(max-width: 768px) {
+  .right {
+    display: none;
+  }
+}
 
 /* ── Section ── */
 .page-section {

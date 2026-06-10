@@ -197,7 +197,45 @@
   .col-mala,
   .col-buena { display: none; }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+
+  .criteria-table thead {
+    display: none;
+  }
+
+  .criteria-table,
+  .criteria-table tbody,
+  .criteria-table tr {
+    display: block;
+  }
+
+  .criteria-table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  .criteria-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    margin-bottom: .25rem;
+
+  }
+
+  .table-wrap {
+    border: none;
+  }
+}
+
+/* @media (max-width: 640px) {
   .col-version   { display: none; }
   .col-principio { display: none; }
-}
+} */

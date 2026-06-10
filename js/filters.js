@@ -30,24 +30,24 @@ function buildRow(c) {
       data-principle="${c.principio}"
       data-version="${c.version}"
     >
-      <td class="col-id">
+      <td class="col-id" data-label="Criterio">
         <span class="criterio-id">${c.id}</span>
         <span class="criterio-nombre">${c.nombre}</span>
       </td>
 
-      <td class="col-que-pide">${c.quePide}</td>
+      <td class="col-que-pide" data-label="Qué pide">${c.quePide}</td>
 
-      <td class="col-nivel" style="text-align:center;">
+      <td class="col-nivel" style="text-align:center;" data-label="Nivel">
         <span class="badge ${nivelBadgeClass(c.nivel)}">${c.nivel}</span>
       </td>
 
-      <td class="col-principio">
+      <td class="col-principio" data-label="Principio">
         <span class="badge ${principioBadgeClass(c.principio)}">${c.principio}</span>
       </td>
 
-      <td class="col-version">${c.version}</td>
+      <td class="col-version" data-label="Versión">${c.version}</td>
 
-      <td class="col-mala">
+      <td class="col-mala" data-label="Mala práctica">
         <p class="code-label code-label-bad">❌ ${c.malaPractica.label}</p>
 
         <details class="snippet-details">
@@ -56,7 +56,7 @@ function buildRow(c) {
         </details>
       </td>
 
-      <td class="col-buena">
+      <td class="col-buena" data-label="Buena práctica">
         <p class="code-label code-label-good">✅ ${c.buenaPractica.label}</p>
         
         <details class="snippet-details">
@@ -65,7 +65,7 @@ function buildRow(c) {
         </details>
       </td>
 
-      <td class="col-recurso">
+      <td class="col-recurso" data-label="Recurso">
         <a
           class="wcag-ext-link"
           href="${c.recurso}"
