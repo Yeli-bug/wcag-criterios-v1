@@ -3,21 +3,21 @@
 :root {
   /* Colores */
   --bg:          #000000;
-  --surface:     #0f0f36;
+  --surface:     #5B2D83;
   --surface2:    #15152a;
   --surface3:    #1b1b2c;
-  --border:      #125e78;
+  --border:      #C03773;
   --border-soft: #16a09e;
 
-  --accent:      #8FCB81;  
-  --accent2:     #7BAEDC;  
-  --accent3:     #D88AA2;   
+  --accent:      #F3658B;  
+  --accent2:     #b0dbef;  
+  --accent3:     #f6c1d1;   
   --accent4:     #E2BE6D;  
   --accent-dim:   rgba(143, 203, 129, 0.14);;
 
-  --text:        #ddddf0;
-  --text-muted:  #bfbfd1;
-  --text-dim:    #9797a4;
+  --text:        #ececf5;
+  --text-muted:  #ffffff;
+  --text-dim:    #efeff8;
 
   /* Tipografía */
   /* --font-mono:   'Space Mono', monospace;
